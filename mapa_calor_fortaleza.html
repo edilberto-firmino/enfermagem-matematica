@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2b8d3ae7683a132d05c9fd2f0b628c08 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2b8d3ae7683a132d05c9fd2f0b628c08" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2b8d3ae7683a132d05c9fd2f0b628c08 = L.map(
+                "map_2b8d3ae7683a132d05c9fd2f0b628c08",
+                {
+                    center: [-3.8165, -38.528],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8cffcf11c38f8e8e2c8bacea8e443788 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8cffcf11c38f8e8e2c8bacea8e443788.addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+            var circle_marker_bb97575d5a1e7f61d9f022384e0f26a6 = L.circleMarker(
+                [-3.815, -38.525],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_5e81ec901c02c3db99ef572492257465 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_813cb0696c892bf7cb6fbf0e00375c06 = $(`<div id="html_813cb0696c892bf7cb6fbf0e00375c06" style="width: 100.0%; height: 100.0%;">Posto Saúde Prefeito José Walter - Centro</div>`)[0];
+                popup_5e81ec901c02c3db99ef572492257465.setContent(html_813cb0696c892bf7cb6fbf0e00375c06);
+            
+        
+
+        circle_marker_bb97575d5a1e7f61d9f022384e0f26a6.bindPopup(popup_5e81ec901c02c3db99ef572492257465)
+        ;
+
+        
+    
+    
+            circle_marker_bb97575d5a1e7f61d9f022384e0f26a6.bindTooltip(
+                `<div>
+                     Posto Saúde Prefeito José Walter - Centro - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04996ea4231ae043a62d6e2ef89f1a7f = L.circleMarker(
+                [-3.8, -38.52],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_d9a5d508c2bedfd2d4ced19bf10e8151 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ba0e178e7ca8f01603c7a44f8289db6 = $(`<div id="html_5ba0e178e7ca8f01603c7a44f8289db6" style="width: 100.0%; height: 100.0%;">Posto Saúde Prefeito José Walter - Norte</div>`)[0];
+                popup_d9a5d508c2bedfd2d4ced19bf10e8151.setContent(html_5ba0e178e7ca8f01603c7a44f8289db6);
+            
+        
+
+        circle_marker_04996ea4231ae043a62d6e2ef89f1a7f.bindPopup(popup_d9a5d508c2bedfd2d4ced19bf10e8151)
+        ;
+
+        
+    
+    
+            circle_marker_04996ea4231ae043a62d6e2ef89f1a7f.bindTooltip(
+                `<div>
+                     Posto Saúde Prefeito José Walter - Norte - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fd8837977fa7d81e6b7ec384a67404f = L.circleMarker(
+                [-3.83, -38.535],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_468c6a4e0712cf1e385be3caa396b731 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c31b96ce5782b701113d45c16678a9f = $(`<div id="html_1c31b96ce5782b701113d45c16678a9f" style="width: 100.0%; height: 100.0%;">Posto Saúde Prefeito José Walter - Sul</div>`)[0];
+                popup_468c6a4e0712cf1e385be3caa396b731.setContent(html_1c31b96ce5782b701113d45c16678a9f);
+            
+        
+
+        circle_marker_9fd8837977fa7d81e6b7ec384a67404f.bindPopup(popup_468c6a4e0712cf1e385be3caa396b731)
+        ;
+
+        
+    
+    
+            circle_marker_9fd8837977fa7d81e6b7ec384a67404f.bindTooltip(
+                `<div>
+                     Posto Saúde Prefeito José Walter - Sul - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9a3ff09af74051a802656eb74f426bb = L.circleMarker(
+                [-3.792, -38.56],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_f9df166895d6a91ef1f2d297f3076115 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_308bae7131018a20647b8b0c8a8da9ab = $(`<div id="html_308bae7131018a20647b8b0c8a8da9ab" style="width: 100.0%; height: 100.0%;">Posto Saúde João XXIII</div>`)[0];
+                popup_f9df166895d6a91ef1f2d297f3076115.setContent(html_308bae7131018a20647b8b0c8a8da9ab);
+            
+        
+
+        circle_marker_c9a3ff09af74051a802656eb74f426bb.bindPopup(popup_f9df166895d6a91ef1f2d297f3076115)
+        ;
+
+        
+    
+    
+            circle_marker_c9a3ff09af74051a802656eb74f426bb.bindTooltip(
+                `<div>
+                     Posto Saúde João XXIII - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a111d04344116776059f84662747f44 = L.circleMarker(
+                [-3.82, -38.54],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_2897dae6ed4a7475af25d3b829d2eee7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c35ab3c918aa5eb463a17f76e699adbb = $(`<div id="html_c35ab3c918aa5eb463a17f76e699adbb" style="width: 100.0%; height: 100.0%;">Posto Saúde Antônio Bezerra</div>`)[0];
+                popup_2897dae6ed4a7475af25d3b829d2eee7.setContent(html_c35ab3c918aa5eb463a17f76e699adbb);
+            
+        
+
+        circle_marker_2a111d04344116776059f84662747f44.bindPopup(popup_2897dae6ed4a7475af25d3b829d2eee7)
+        ;
+
+        
+    
+    
+            circle_marker_2a111d04344116776059f84662747f44.bindTooltip(
+                `<div>
+                     Posto Saúde Antônio Bezerra - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cbe514494fe06a6fdb59237ac0f418d = L.circleMarker(
+                [-3.84, -38.545],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_556d393bf892223aef6e3b4ed8a12df2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06690fb29ae780d4e73404c916411bfa = $(`<div id="html_06690fb29ae780d4e73404c916411bfa" style="width: 100.0%; height: 100.0%;">Posto Saúde Cajazeiras</div>`)[0];
+                popup_556d393bf892223aef6e3b4ed8a12df2.setContent(html_06690fb29ae780d4e73404c916411bfa);
+            
+        
+
+        circle_marker_2cbe514494fe06a6fdb59237ac0f418d.bindPopup(popup_556d393bf892223aef6e3b4ed8a12df2)
+        ;
+
+        
+    
+    
+            circle_marker_2cbe514494fe06a6fdb59237ac0f418d.bindTooltip(
+                `<div>
+                     Posto Saúde Cajazeiras - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5ca43adfb1930215ea5a8f396a12aa14 = L.circleMarker(
+                [-3.835, -38.53],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_e79220bc059cc61b6cdcfdd0480ce7a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1804763c65d168ef5db2c61809a8a1f3 = $(`<div id="html_1804763c65d168ef5db2c61809a8a1f3" style="width: 100.0%; height: 100.0%;">Posto Saúde Bairro Novo</div>`)[0];
+                popup_e79220bc059cc61b6cdcfdd0480ce7a4.setContent(html_1804763c65d168ef5db2c61809a8a1f3);
+            
+        
+
+        circle_marker_5ca43adfb1930215ea5a8f396a12aa14.bindPopup(popup_e79220bc059cc61b6cdcfdd0480ce7a4)
+        ;
+
+        
+    
+    
+            circle_marker_5ca43adfb1930215ea5a8f396a12aa14.bindTooltip(
+                `<div>
+                     Posto Saúde Bairro Novo - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5c921dc761eef06284b92b2d222468e = L.circleMarker(
+                [-3.81, -38.51],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_62cff0983ed0d5dd39dad8e82665d660 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3797db1f7dcf78861213388261a9e908 = $(`<div id="html_3797db1f7dcf78861213388261a9e908" style="width: 100.0%; height: 100.0%;">Posto Saúde Castelão</div>`)[0];
+                popup_62cff0983ed0d5dd39dad8e82665d660.setContent(html_3797db1f7dcf78861213388261a9e908);
+            
+        
+
+        circle_marker_a5c921dc761eef06284b92b2d222468e.bindPopup(popup_62cff0983ed0d5dd39dad8e82665d660)
+        ;
+
+        
+    
+    
+            circle_marker_a5c921dc761eef06284b92b2d222468e.bindTooltip(
+                `<div>
+                     Posto Saúde Castelão - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5063797392a5be3578eb139f58302e19 = L.circleMarker(
+                [-3.825, -38.52],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_67331732707960eda802cbfa62e32278 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59292fae26768e80a05bc3fc362c6575 = $(`<div id="html_59292fae26768e80a05bc3fc362c6575" style="width: 100.0%; height: 100.0%;">Posto Saúde Carlito Pamplona</div>`)[0];
+                popup_67331732707960eda802cbfa62e32278.setContent(html_59292fae26768e80a05bc3fc362c6575);
+            
+        
+
+        circle_marker_5063797392a5be3578eb139f58302e19.bindPopup(popup_67331732707960eda802cbfa62e32278)
+        ;
+
+        
+    
+    
+            circle_marker_5063797392a5be3578eb139f58302e19.bindTooltip(
+                `<div>
+                     Posto Saúde Carlito Pamplona - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76f0b04892ef6257a5d16300c848657f = L.circleMarker(
+                [-3.7285, -38.527],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_1838e3017819e02ffd657c5aacfb5995 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7076661abdc82d54887101233e85680f = $(`<div id="html_7076661abdc82d54887101233e85680f" style="width: 100.0%; height: 100.0%;">Posto Saúde Centro</div>`)[0];
+                popup_1838e3017819e02ffd657c5aacfb5995.setContent(html_7076661abdc82d54887101233e85680f);
+            
+        
+
+        circle_marker_76f0b04892ef6257a5d16300c848657f.bindPopup(popup_1838e3017819e02ffd657c5aacfb5995)
+        ;
+
+        
+    
+    
+            circle_marker_76f0b04892ef6257a5d16300c848657f.bindTooltip(
+                `<div>
+                     Posto Saúde Centro - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4044b486514e4c42e86e603fa3b1399 = L.circleMarker(
+                [-3.738, -38.495],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_e5c79031e8e400eab1976c2bf8e0607f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e70bed9cd635008f2a618ed6ce0b23f1 = $(`<div id="html_e70bed9cd635008f2a618ed6ce0b23f1" style="width: 100.0%; height: 100.0%;">Posto Saúde Aldeota</div>`)[0];
+                popup_e5c79031e8e400eab1976c2bf8e0607f.setContent(html_e70bed9cd635008f2a618ed6ce0b23f1);
+            
+        
+
+        circle_marker_a4044b486514e4c42e86e603fa3b1399.bindPopup(popup_e5c79031e8e400eab1976c2bf8e0607f)
+        ;
+
+        
+    
+    
+            circle_marker_a4044b486514e4c42e86e603fa3b1399.bindTooltip(
+                `<div>
+                     Posto Saúde Aldeota - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b83b4921bb489257ee639bab147940c4 = L.circleMarker(
+                [-3.805, -38.5],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_21b079d15129d4c7a88f1e9e07b78e35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8a5173746da4d5754fc8aac4bca0fc8 = $(`<div id="html_f8a5173746da4d5754fc8aac4bca0fc8" style="width: 100.0%; height: 100.0%;">Posto Saúde Papicu</div>`)[0];
+                popup_21b079d15129d4c7a88f1e9e07b78e35.setContent(html_f8a5173746da4d5754fc8aac4bca0fc8);
+            
+        
+
+        circle_marker_b83b4921bb489257ee639bab147940c4.bindPopup(popup_21b079d15129d4c7a88f1e9e07b78e35)
+        ;
+
+        
+    
+    
+            circle_marker_b83b4921bb489257ee639bab147940c4.bindTooltip(
+                `<div>
+                     Posto Saúde Papicu - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e8a74ce7bd5cb7c62b0bff52c3e5e1e = L.circleMarker(
+                [-3.725, -38.505],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_c36c7b5dc9d0a7aa449793d5ca431efc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac493722852eb05d3d09fb2106511b04 = $(`<div id="html_ac493722852eb05d3d09fb2106511b04" style="width: 100.0%; height: 100.0%;">Posto Saúde Meireles</div>`)[0];
+                popup_c36c7b5dc9d0a7aa449793d5ca431efc.setContent(html_ac493722852eb05d3d09fb2106511b04);
+            
+        
+
+        circle_marker_7e8a74ce7bd5cb7c62b0bff52c3e5e1e.bindPopup(popup_c36c7b5dc9d0a7aa449793d5ca431efc)
+        ;
+
+        
+    
+    
+            circle_marker_7e8a74ce7bd5cb7c62b0bff52c3e5e1e.bindTooltip(
+                `<div>
+                     Posto Saúde Meireles - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7ccc5f0dce5e9864b56aee232788e67 = L.circleMarker(
+                [-3.715, -38.518],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_7b3153568dbf2914fd519bcf1c23cda8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0282b210471452b58ed860c4813a1332 = $(`<div id="html_0282b210471452b58ed860c4813a1332" style="width: 100.0%; height: 100.0%;">Posto Saúde Praia de Iracema</div>`)[0];
+                popup_7b3153568dbf2914fd519bcf1c23cda8.setContent(html_0282b210471452b58ed860c4813a1332);
+            
+        
+
+        circle_marker_b7ccc5f0dce5e9864b56aee232788e67.bindPopup(popup_7b3153568dbf2914fd519bcf1c23cda8)
+        ;
+
+        
+    
+    
+            circle_marker_b7ccc5f0dce5e9864b56aee232788e67.bindTooltip(
+                `<div>
+                     Posto Saúde Praia de Iracema - Posto de Saúde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0aebf15da1259ed393d8c9ed9f55120 = L.circleMarker(
+                [-3.818, -38.526],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_6a8b78eada81099badea0d9266b00cc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b9343bc71f892025977f0216903ab5e = $(`<div id="html_3b9343bc71f892025977f0216903ab5e" style="width: 100.0%; height: 100.0%;">Delegacia Prefeito José Walter</div>`)[0];
+                popup_6a8b78eada81099badea0d9266b00cc2.setContent(html_3b9343bc71f892025977f0216903ab5e);
+            
+        
+
+        circle_marker_e0aebf15da1259ed393d8c9ed9f55120.bindPopup(popup_6a8b78eada81099badea0d9266b00cc2)
+        ;
+
+        
+    
+    
+            circle_marker_e0aebf15da1259ed393d8c9ed9f55120.bindTooltip(
+                `<div>
+                     Delegacia Prefeito José Walter - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b523a8e733a4fce52a45f59f92b1d0b = L.circleMarker(
+                [-3.821, -38.538],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_f6fe1805fe16fa5acc36bb4cfb424b5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0708e837669bec5d5ed4cc50e5f3d31d = $(`<div id="html_0708e837669bec5d5ed4cc50e5f3d31d" style="width: 100.0%; height: 100.0%;">Base de Segurança Antônio Bezerra</div>`)[0];
+                popup_f6fe1805fe16fa5acc36bb4cfb424b5b.setContent(html_0708e837669bec5d5ed4cc50e5f3d31d);
+            
+        
+
+        circle_marker_4b523a8e733a4fce52a45f59f92b1d0b.bindPopup(popup_f6fe1805fe16fa5acc36bb4cfb424b5b)
+        ;
+
+        
+    
+    
+            circle_marker_4b523a8e733a4fce52a45f59f92b1d0b.bindTooltip(
+                `<div>
+                     Base de Segurança Antônio Bezerra - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7a87491180bb2064cb5ece5d96a500e = L.circleMarker(
+                [-3.838, -38.542],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_4246bdabb86b2dbadce591428d72f8d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_968591ad73547dd79f9e5bcc6f4feb25 = $(`<div id="html_968591ad73547dd79f9e5bcc6f4feb25" style="width: 100.0%; height: 100.0%;">Delegacia Cajazeiras</div>`)[0];
+                popup_4246bdabb86b2dbadce591428d72f8d0.setContent(html_968591ad73547dd79f9e5bcc6f4feb25);
+            
+        
+
+        circle_marker_f7a87491180bb2064cb5ece5d96a500e.bindPopup(popup_4246bdabb86b2dbadce591428d72f8d0)
+        ;
+
+        
+    
+    
+            circle_marker_f7a87491180bb2064cb5ece5d96a500e.bindTooltip(
+                `<div>
+                     Delegacia Cajazeiras - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6f735dcd9cc8ddd8f1321f0e6c06a9c1 = L.circleMarker(
+                [-3.832, -38.53],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_2f8f7923ba1d63926a6893bdf12f8396 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8f0ed1620c9944bfcb00320f8115fe3 = $(`<div id="html_c8f0ed1620c9944bfcb00320f8115fe3" style="width: 100.0%; height: 100.0%;">Delegacia Bairro Novo</div>`)[0];
+                popup_2f8f7923ba1d63926a6893bdf12f8396.setContent(html_c8f0ed1620c9944bfcb00320f8115fe3);
+            
+        
+
+        circle_marker_6f735dcd9cc8ddd8f1321f0e6c06a9c1.bindPopup(popup_2f8f7923ba1d63926a6893bdf12f8396)
+        ;
+
+        
+    
+    
+            circle_marker_6f735dcd9cc8ddd8f1321f0e6c06a9c1.bindTooltip(
+                `<div>
+                     Delegacia Bairro Novo - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6eb3b9575feb0cc4bfa4d394c213fae = L.circleMarker(
+                [-3.815, -38.52],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_4d7048328ff2d2c98c133b5bdc68c706 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4ad8c00bcdb5e9eaf7e2587ced58386 = $(`<div id="html_f4ad8c00bcdb5e9eaf7e2587ced58386" style="width: 100.0%; height: 100.0%;">7º Batalhão da PM</div>`)[0];
+                popup_4d7048328ff2d2c98c133b5bdc68c706.setContent(html_f4ad8c00bcdb5e9eaf7e2587ced58386);
+            
+        
+
+        circle_marker_e6eb3b9575feb0cc4bfa4d394c213fae.bindPopup(popup_4d7048328ff2d2c98c133b5bdc68c706)
+        ;
+
+        
+    
+    
+            circle_marker_e6eb3b9575feb0cc4bfa4d394c213fae.bindTooltip(
+                `<div>
+                     7º Batalhão da PM - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8f2cb4aad485780f6c89c4b0b21d2f7 = L.circleMarker(
+                [-3.731, -38.5265],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_7bbdec7a07490b4e785331f2dcf53a75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c4b9164ca9b3a86584255256b083462 = $(`<div id="html_4c4b9164ca9b3a86584255256b083462" style="width: 100.0%; height: 100.0%;">Delegacia Centro</div>`)[0];
+                popup_7bbdec7a07490b4e785331f2dcf53a75.setContent(html_4c4b9164ca9b3a86584255256b083462);
+            
+        
+
+        circle_marker_e8f2cb4aad485780f6c89c4b0b21d2f7.bindPopup(popup_7bbdec7a07490b4e785331f2dcf53a75)
+        ;
+
+        
+    
+    
+            circle_marker_e8f2cb4aad485780f6c89c4b0b21d2f7.bindTooltip(
+                `<div>
+                     Delegacia Centro - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50af03b86f30870a9d78d7e3a38a9496 = L.circleMarker(
+                [-3.725, -38.505],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_082689fb816637ffd929a9644bce77ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_084618b24ae66c3a3d7af782d8260874 = $(`<div id="html_084618b24ae66c3a3d7af782d8260874" style="width: 100.0%; height: 100.0%;">Delegacia Meireles</div>`)[0];
+                popup_082689fb816637ffd929a9644bce77ce.setContent(html_084618b24ae66c3a3d7af782d8260874);
+            
+        
+
+        circle_marker_50af03b86f30870a9d78d7e3a38a9496.bindPopup(popup_082689fb816637ffd929a9644bce77ce)
+        ;
+
+        
+    
+    
+            circle_marker_50af03b86f30870a9d78d7e3a38a9496.bindTooltip(
+                `<div>
+                     Delegacia Meireles - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_656c2d0b02af0bb7417aaf00dcbaae88 = L.circleMarker(
+                [-3.742, -38.492],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_188cd53c4dc740bfb6c1e0f9e7a8b3a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e22bb1fc6d6cd22bf75c313c7e67d92 = $(`<div id="html_9e22bb1fc6d6cd22bf75c313c7e67d92" style="width: 100.0%; height: 100.0%;">Delegacia Aldeota</div>`)[0];
+                popup_188cd53c4dc740bfb6c1e0f9e7a8b3a0.setContent(html_9e22bb1fc6d6cd22bf75c313c7e67d92);
+            
+        
+
+        circle_marker_656c2d0b02af0bb7417aaf00dcbaae88.bindPopup(popup_188cd53c4dc740bfb6c1e0f9e7a8b3a0)
+        ;
+
+        
+    
+    
+            circle_marker_656c2d0b02af0bb7417aaf00dcbaae88.bindTooltip(
+                `<div>
+                     Delegacia Aldeota - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4c5aed8dd93563dc0db200c99f1e255c = L.circleMarker(
+                [-3.715, -38.518],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_31958d1b89945c25da28197cb24c7344 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c4d764b91a463ad5ae16630212bea2f = $(`<div id="html_0c4d764b91a463ad5ae16630212bea2f" style="width: 100.0%; height: 100.0%;">Delegacia Praia de Iracema</div>`)[0];
+                popup_31958d1b89945c25da28197cb24c7344.setContent(html_0c4d764b91a463ad5ae16630212bea2f);
+            
+        
+
+        circle_marker_4c5aed8dd93563dc0db200c99f1e255c.bindPopup(popup_31958d1b89945c25da28197cb24c7344)
+        ;
+
+        
+    
+    
+            circle_marker_4c5aed8dd93563dc0db200c99f1e255c.bindTooltip(
+                `<div>
+                     Delegacia Praia de Iracema - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71148ae3bdb5a890ac05a81f7aa24907 = L.circleMarker(
+                [-3.74, -38.515],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_606cbb211a5186be54b5a1e454b4faa2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf63b4e8817dc1b2d84e901647c0a186 = $(`<div id="html_bf63b4e8817dc1b2d84e901647c0a186" style="width: 100.0%; height: 100.0%;">Batalhão de Choque</div>`)[0];
+                popup_606cbb211a5186be54b5a1e454b4faa2.setContent(html_bf63b4e8817dc1b2d84e901647c0a186);
+            
+        
+
+        circle_marker_71148ae3bdb5a890ac05a81f7aa24907.bindPopup(popup_606cbb211a5186be54b5a1e454b4faa2)
+        ;
+
+        
+    
+    
+            circle_marker_71148ae3bdb5a890ac05a81f7aa24907.bindTooltip(
+                `<div>
+                     Batalhão de Choque - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ca4cf2ae1587c00e8c258d677c57771 = L.circleMarker(
+                [-3.805, -38.5],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_c3213aadfc213625c1254da03e1a77e9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d28e597be00c49b435d3b7bf4bdffa2 = $(`<div id="html_0d28e597be00c49b435d3b7bf4bdffa2" style="width: 100.0%; height: 100.0%;">Delegacia Papicu</div>`)[0];
+                popup_c3213aadfc213625c1254da03e1a77e9.setContent(html_0d28e597be00c49b435d3b7bf4bdffa2);
+            
+        
+
+        circle_marker_2ca4cf2ae1587c00e8c258d677c57771.bindPopup(popup_c3213aadfc213625c1254da03e1a77e9)
+        ;
+
+        
+    
+    
+            circle_marker_2ca4cf2ae1587c00e8c258d677c57771.bindTooltip(
+                `<div>
+                     Delegacia Papicu - Delegacia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48d4452f8234dcfe6c09e63568611d41 = L.circleMarker(
+                [-3.817, -38.524],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_b9d21e960f95e5d4a90e0828f164e393 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8f4062d80bf444cfe79213503db63f7 = $(`<div id="html_b8f4062d80bf444cfe79213503db63f7" style="width: 100.0%; height: 100.0%;">CAPS Prefeito José Walter</div>`)[0];
+                popup_b9d21e960f95e5d4a90e0828f164e393.setContent(html_b8f4062d80bf444cfe79213503db63f7);
+            
+        
+
+        circle_marker_48d4452f8234dcfe6c09e63568611d41.bindPopup(popup_b9d21e960f95e5d4a90e0828f164e393)
+        ;
+
+        
+    
+    
+            circle_marker_48d4452f8234dcfe6c09e63568611d41.bindTooltip(
+                `<div>
+                     CAPS Prefeito José Walter - CAPS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_58333d2577cc45f577e8511e8b2b1b25 = L.circleMarker(
+                [-3.822, -38.535],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_432bebd1a8673954163573df546c2ff8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_614dfa795b43afb1521481c6a32a9bb2 = $(`<div id="html_614dfa795b43afb1521481c6a32a9bb2" style="width: 100.0%; height: 100.0%;">CAPS Antônio Bezerra</div>`)[0];
+                popup_432bebd1a8673954163573df546c2ff8.setContent(html_614dfa795b43afb1521481c6a32a9bb2);
+            
+        
+
+        circle_marker_58333d2577cc45f577e8511e8b2b1b25.bindPopup(popup_432bebd1a8673954163573df546c2ff8)
+        ;
+
+        
+    
+    
+            circle_marker_58333d2577cc45f577e8511e8b2b1b25.bindTooltip(
+                `<div>
+                     CAPS Antônio Bezerra - CAPS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2eed9d6d2df47f5450c314ba295ca723 = L.circleMarker(
+                [-3.815, -38.52],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_f4f3f659843a664eebcb5ad82eb9ed1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_387b6bc2d06c8253da5a7dfad9291e52 = $(`<div id="html_387b6bc2d06c8253da5a7dfad9291e52" style="width: 100.0%; height: 100.0%;">CAPS Infantil Fortaleza</div>`)[0];
+                popup_f4f3f659843a664eebcb5ad82eb9ed1d.setContent(html_387b6bc2d06c8253da5a7dfad9291e52);
+            
+        
+
+        circle_marker_2eed9d6d2df47f5450c314ba295ca723.bindPopup(popup_f4f3f659843a664eebcb5ad82eb9ed1d)
+        ;
+
+        
+    
+    
+            circle_marker_2eed9d6d2df47f5450c314ba295ca723.bindTooltip(
+                `<div>
+                     CAPS Infantil Fortaleza - CAPS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc104a2754e46cfeb200096f8d1470f4 = L.circleMarker(
+                [-3.828, -38.53],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_ece973a231bdf20725f74087d632dfe2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd5110aeace405ac7760bdb9c0d1cb1c = $(`<div id="html_dd5110aeace405ac7760bdb9c0d1cb1c" style="width: 100.0%; height: 100.0%;">CAPS Álcool e Drogas</div>`)[0];
+                popup_ece973a231bdf20725f74087d632dfe2.setContent(html_dd5110aeace405ac7760bdb9c0d1cb1c);
+            
+        
+
+        circle_marker_fc104a2754e46cfeb200096f8d1470f4.bindPopup(popup_ece973a231bdf20725f74087d632dfe2)
+        ;
+
+        
+    
+    
+            circle_marker_fc104a2754e46cfeb200096f8d1470f4.bindTooltip(
+                `<div>
+                     CAPS Álcool e Drogas - CAPS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7f8616ba05bbf64dc4e339e8bad7bb88 = L.circleMarker(
+                [-3.732, -38.528],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_40adaa97bfdd97605c869f0bc7e7634c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e99ee7073c62d052ab9e09103eb56ac2 = $(`<div id="html_e99ee7073c62d052ab9e09103eb56ac2" style="width: 100.0%; height: 100.0%;">CAPS Centro</div>`)[0];
+                popup_40adaa97bfdd97605c869f0bc7e7634c.setContent(html_e99ee7073c62d052ab9e09103eb56ac2);
+            
+        
+
+        circle_marker_7f8616ba05bbf64dc4e339e8bad7bb88.bindPopup(popup_40adaa97bfdd97605c869f0bc7e7634c)
+        ;
+
+        
+    
+    
+            circle_marker_7f8616ba05bbf64dc4e339e8bad7bb88.bindTooltip(
+                `<div>
+                     CAPS Centro - CAPS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1a0dd68789f84d530df7f589c38cf75 = L.circleMarker(
+                [-3.74, -38.49],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_7c7e5f6fa2e5a522aae296cff9f1b5d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_739cddd5531a59656b3347fe14deeecf = $(`<div id="html_739cddd5531a59656b3347fe14deeecf" style="width: 100.0%; height: 100.0%;">CAPS Aldeota</div>`)[0];
+                popup_7c7e5f6fa2e5a522aae296cff9f1b5d8.setContent(html_739cddd5531a59656b3347fe14deeecf);
+            
+        
+
+        circle_marker_b1a0dd68789f84d530df7f589c38cf75.bindPopup(popup_7c7e5f6fa2e5a522aae296cff9f1b5d8)
+        ;
+
+        
+    
+    
+            circle_marker_b1a0dd68789f84d530df7f589c38cf75.bindTooltip(
+                `<div>
+                     CAPS Aldeota - CAPS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1aca491e798a04d57fc71915dae5289c = L.circleMarker(
+                [-3.725, -38.505],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_395c10343e25d213b086103693c7bdf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0924316f0f57937467511ff27f02b1de = $(`<div id="html_0924316f0f57937467511ff27f02b1de" style="width: 100.0%; height: 100.0%;">CAPS Meireles</div>`)[0];
+                popup_395c10343e25d213b086103693c7bdf0.setContent(html_0924316f0f57937467511ff27f02b1de);
+            
+        
+
+        circle_marker_1aca491e798a04d57fc71915dae5289c.bindPopup(popup_395c10343e25d213b086103693c7bdf0)
+        ;
+
+        
+    
+    
+            circle_marker_1aca491e798a04d57fc71915dae5289c.bindTooltip(
+                `<div>
+                     CAPS Meireles - CAPS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0147a0d88d281fe99f94308e50761876 = L.circleMarker(
+                [-3.752, -38.51],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_996ee18d5053098d2d942744aa3abba3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b0a223b8685efcb256ba1226a1d506a = $(`<div id="html_6b0a223b8685efcb256ba1226a1d506a" style="width: 100.0%; height: 100.0%;">CAPS Dionísio Torres</div>`)[0];
+                popup_996ee18d5053098d2d942744aa3abba3.setContent(html_6b0a223b8685efcb256ba1226a1d506a);
+            
+        
+
+        circle_marker_0147a0d88d281fe99f94308e50761876.bindPopup(popup_996ee18d5053098d2d942744aa3abba3)
+        ;
+
+        
+    
+    
+            circle_marker_0147a0d88d281fe99f94308e50761876.bindTooltip(
+                `<div>
+                     CAPS Dionísio Torres - CAPS
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e081cd595968fa4c06689307913c64dc = L.circleMarker(
+                [-3.816, -38.527],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_03ca6a58821313f4505637e1cde119e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2a79cf585af730a6dd8c1dcc1725bce = $(`<div id="html_c2a79cf585af730a6dd8c1dcc1725bce" style="width: 100.0%; height: 100.0%;">Corpo de Bombeiros - Prefeito José Walter</div>`)[0];
+                popup_03ca6a58821313f4505637e1cde119e0.setContent(html_c2a79cf585af730a6dd8c1dcc1725bce);
+            
+        
+
+        circle_marker_e081cd595968fa4c06689307913c64dc.bindPopup(popup_03ca6a58821313f4505637e1cde119e0)
+        ;
+
+        
+    
+    
+            circle_marker_e081cd595968fa4c06689307913c64dc.bindTooltip(
+                `<div>
+                     Corpo de Bombeiros - Prefeito José Walter - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a711d2f2589dee464b3a87d63790903 = L.circleMarker(
+                [-3.82, -38.532],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_66ce5d550794d666968162791113251e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8d794647d75ae870ee1b9bbd12bf67e = $(`<div id="html_b8d794647d75ae870ee1b9bbd12bf67e" style="width: 100.0%; height: 100.0%;">Corpo de Bombeiros - Antônio Bezerra</div>`)[0];
+                popup_66ce5d550794d666968162791113251e.setContent(html_b8d794647d75ae870ee1b9bbd12bf67e);
+            
+        
+
+        circle_marker_3a711d2f2589dee464b3a87d63790903.bindPopup(popup_66ce5d550794d666968162791113251e)
+        ;
+
+        
+    
+    
+            circle_marker_3a711d2f2589dee464b3a87d63790903.bindTooltip(
+                `<div>
+                     Corpo de Bombeiros - Antônio Bezerra - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4c33a2691ee4f008630d7b75a2e92ac = L.circleMarker(
+                [-3.836, -38.54],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_ff51389a805bf4f676f27c0033be4b59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_719ccc23e88aac344e7f025cccc0f13d = $(`<div id="html_719ccc23e88aac344e7f025cccc0f13d" style="width: 100.0%; height: 100.0%;">Corpo de Bombeiros - Cajazeiras</div>`)[0];
+                popup_ff51389a805bf4f676f27c0033be4b59.setContent(html_719ccc23e88aac344e7f025cccc0f13d);
+            
+        
+
+        circle_marker_e4c33a2691ee4f008630d7b75a2e92ac.bindPopup(popup_ff51389a805bf4f676f27c0033be4b59)
+        ;
+
+        
+    
+    
+            circle_marker_e4c33a2691ee4f008630d7b75a2e92ac.bindTooltip(
+                `<div>
+                     Corpo de Bombeiros - Cajazeiras - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49491bba4bea70459e0bfad7235c136e = L.circleMarker(
+                [-3.831, -38.528],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_9dc28df1209f9bea8fc6dbdf7c9e140e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_374b86a171da4458aef6cd7d044a3baf = $(`<div id="html_374b86a171da4458aef6cd7d044a3baf" style="width: 100.0%; height: 100.0%;">Corpo de Bombeiros - Bairro Novo</div>`)[0];
+                popup_9dc28df1209f9bea8fc6dbdf7c9e140e.setContent(html_374b86a171da4458aef6cd7d044a3baf);
+            
+        
+
+        circle_marker_49491bba4bea70459e0bfad7235c136e.bindPopup(popup_9dc28df1209f9bea8fc6dbdf7c9e140e)
+        ;
+
+        
+    
+    
+            circle_marker_49491bba4bea70459e0bfad7235c136e.bindTooltip(
+                `<div>
+                     Corpo de Bombeiros - Bairro Novo - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d6bb1bb02c863469577348aadf5d84fa = L.circleMarker(
+                [-3.7315, -38.5275],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_06886af026f434c6e8edd027954b7a61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b35b0c0b8e57a0399b136ee574a3639 = $(`<div id="html_7b35b0c0b8e57a0399b136ee574a3639" style="width: 100.0%; height: 100.0%;">Corpo de Bombeiros - Centro</div>`)[0];
+                popup_06886af026f434c6e8edd027954b7a61.setContent(html_7b35b0c0b8e57a0399b136ee574a3639);
+            
+        
+
+        circle_marker_d6bb1bb02c863469577348aadf5d84fa.bindPopup(popup_06886af026f434c6e8edd027954b7a61)
+        ;
+
+        
+    
+    
+            circle_marker_d6bb1bb02c863469577348aadf5d84fa.bindTooltip(
+                `<div>
+                     Corpo de Bombeiros - Centro - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0bdd2b1f2335f66b1b658b6b2df39e6b = L.circleMarker(
+                [-3.714, -38.515],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_55c1b729feb1cc51ee8e0916a39bf404 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d9698596e0a18dc75e8dd5a7295da64 = $(`<div id="html_3d9698596e0a18dc75e8dd5a7295da64" style="width: 100.0%; height: 100.0%;">Corpo de Bombeiros - Praia de Iracema</div>`)[0];
+                popup_55c1b729feb1cc51ee8e0916a39bf404.setContent(html_3d9698596e0a18dc75e8dd5a7295da64);
+            
+        
+
+        circle_marker_0bdd2b1f2335f66b1b658b6b2df39e6b.bindPopup(popup_55c1b729feb1cc51ee8e0916a39bf404)
+        ;
+
+        
+    
+    
+            circle_marker_0bdd2b1f2335f66b1b658b6b2df39e6b.bindTooltip(
+                `<div>
+                     Corpo de Bombeiros - Praia de Iracema - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c40b8b4c229898786fa2e6b208307ec8 = L.circleMarker(
+                [-3.741, -38.493],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_12368ae433e57fffc897ac5f3f3e1047 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8aac3c54d14a4fd08288956e078ceec = $(`<div id="html_d8aac3c54d14a4fd08288956e078ceec" style="width: 100.0%; height: 100.0%;">Corpo de Bombeiros - Aldeota</div>`)[0];
+                popup_12368ae433e57fffc897ac5f3f3e1047.setContent(html_d8aac3c54d14a4fd08288956e078ceec);
+            
+        
+
+        circle_marker_c40b8b4c229898786fa2e6b208307ec8.bindPopup(popup_12368ae433e57fffc897ac5f3f3e1047)
+        ;
+
+        
+    
+    
+            circle_marker_c40b8b4c229898786fa2e6b208307ec8.bindTooltip(
+                `<div>
+                     Corpo de Bombeiros - Aldeota - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a9f1a450380bfe0fad2de566c8d97a2 = L.circleMarker(
+                [-3.8, -38.51],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_582173ab4ed5b3062c215f960a537ac7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b3429f820de1fdf07ae910f741185a8 = $(`<div id="html_3b3429f820de1fdf07ae910f741185a8" style="width: 100.0%; height: 100.0%;">Corpo de Bombeiros - Papicu</div>`)[0];
+                popup_582173ab4ed5b3062c215f960a537ac7.setContent(html_3b3429f820de1fdf07ae910f741185a8);
+            
+        
+
+        circle_marker_3a9f1a450380bfe0fad2de566c8d97a2.bindPopup(popup_582173ab4ed5b3062c215f960a537ac7)
+        ;
+
+        
+    
+    
+            circle_marker_3a9f1a450380bfe0fad2de566c8d97a2.bindTooltip(
+                `<div>
+                     Corpo de Bombeiros - Papicu - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6d42e7371ea84fff7aca2ae58bfd8f4 = L.circleMarker(
+                [-3.825, -38.535],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+        
+    
+        var popup_e31be6d15e647175e64093acbf13665b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf41684c1e0cf6a745be232901dd4d16 = $(`<div id="html_bf41684c1e0cf6a745be232901dd4d16" style="width: 100.0%; height: 100.0%;">Quartel de Bombeiros Sul</div>`)[0];
+                popup_e31be6d15e647175e64093acbf13665b.setContent(html_bf41684c1e0cf6a745be232901dd4d16);
+            
+        
+
+        circle_marker_f6d42e7371ea84fff7aca2ae58bfd8f4.bindPopup(popup_e31be6d15e647175e64093acbf13665b)
+        ;
+
+        
+    
+    
+            circle_marker_f6d42e7371ea84fff7aca2ae58bfd8f4.bindTooltip(
+                `<div>
+                     Quartel de Bombeiros Sul - Bombeiros
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var heat_map_d7f37b112724c47c428e6875452bdfd2 = L.heatLayer(
+                [[-3.815, -38.525, 1], [-3.8, -38.52, 1], [-3.83, -38.535, 1], [-3.792, -38.56, 1], [-3.82, -38.54, 1], [-3.84, -38.545, 1], [-3.835, -38.53, 1], [-3.81, -38.51, 1], [-3.825, -38.52, 1], [-3.7285, -38.527, 1], [-3.738, -38.495, 1], [-3.805, -38.5, 1], [-3.725, -38.505, 1], [-3.715, -38.518, 1], [-3.818, -38.526, 1], [-3.821, -38.538, 1], [-3.838, -38.542, 1], [-3.832, -38.53, 1], [-3.815, -38.52, 1], [-3.731, -38.5265, 1], [-3.725, -38.505, 1], [-3.742, -38.492, 1], [-3.715, -38.518, 1], [-3.74, -38.515, 1], [-3.805, -38.5, 1], [-3.817, -38.524, 1], [-3.822, -38.535, 1], [-3.815, -38.52, 1], [-3.828, -38.53, 1], [-3.732, -38.528, 1], [-3.74, -38.49, 1], [-3.725, -38.505, 1], [-3.752, -38.51, 1], [-3.816, -38.527, 1], [-3.82, -38.532, 1], [-3.836, -38.54, 1], [-3.831, -38.528, 1], [-3.7315, -38.5275, 1], [-3.714, -38.515, 1], [-3.741, -38.493, 1], [-3.8, -38.51, 1], [-3.825, -38.535, 1], [-3.8145, -38.5265, 1], [-3.8142, -38.526, 1], [-3.8155, -38.528, 1]],
+                {
+  "minOpacity": 0.5,
+  "maxZoom": 13,
+  "radius": 20,
+  "blur": 15,
+}
+            );
+        
+    
+            heat_map_d7f37b112724c47c428e6875452bdfd2.addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+
+
+            var div_icon_onelio_porto = L.divIcon({
+                "className": "empty",
+                "html": "<div style=\"font-size: 28px; line-height: 28px; text-align: center;\">🧍</div>",
+                "iconSize": [28, 28],
+                "iconAnchor": [14, 28],
+                "popupAnchor": [0, -28]
+            });
+
+
+            var marker_onelio_porto = L.marker(
+                [-3.8145, -38.5265],
+                {
+                    icon: div_icon_onelio_porto
+                }
+            ).addTo(map_2b8d3ae7683a132d05c9fd2f0b628c08);
+
+
+            marker_onelio_porto.bindPopup(
+                "<b>Pessoa na Escola Professor Onelio Porto</b><br>Bairro Prefeito Jose Walter"
+            );
+
+
+            marker_onelio_porto.bindTooltip(
+                `<div>
+                     Pessoa na Escola Professor Onelio Porto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
